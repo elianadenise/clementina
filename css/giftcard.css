@@ -1,0 +1,176 @@
+@import url(general.css);
+
+/* Gift card */
+.giftcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+}
+
+.giftcard:hover {
+    transition: 0.5s;
+    filter: drop-shadow(0 0.5vh 0.5vh #cecece);
+}
+
+.giftcard .ingreso {
+    width: 100%;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding-top: 0.7em;
+}
+
+.radio-container div {
+    padding-right: 1rem;
+}
+
+.radio-container div input,
+.div-radio div img,
+.div-radio div .div-color {
+    display: block;
+}
+
+.radio-container div img {
+    width: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--negro);
+}
+
+.radio-container div .color1,
+.radio-container div .color2,
+.radio-container div .color3,
+.radio-container div .color4,
+.radio-container div .color5 {
+    padding: 0.5em 1.2em;
+    border: 1px solid var(--negro);
+    border-radius: 50%;
+}
+
+.radio-container .color1 {
+    background-color: var(--blanco);
+}
+
+.radio-container .color2 {
+    background-color: var(--negro);
+}
+
+.radio-container .color3 {
+    background-color: var(--rosa);
+}
+
+.radio-container .color4 {
+    background-color: var(--azul);
+}
+
+.radio-container .color5 {
+    background-color: #AA77FF;
+}
+
+.ingreso-container {
+    padding: 0.7em 0;
+}
+
+.ingreso-container label,
+.ingreso-container input {
+    display: block;
+    margin: 0;
+}
+
+.giftcard-formulario {
+    background-color: var(--gris);
+    padding: 1.5em;
+    margin: 0.7em;
+    width: 24em;
+}
+
+.giftcard-imagen {
+    margin: 0.7em;
+}
+
+.giftcard-formulario:hover {
+    transition: 0.5s;
+    filter: drop-shadow(0 0.5vh 0.5vh #cecece);
+}
+
+.giftcard-formulario .container {
+    padding: 0.7em 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.giftcard-formulario .btn {
+    margin-top: 1em;
+    float: right;
+}
+
+.giftcard-imagen {
+    width: 24em;
+    height: 24em;
+    position: relative;
+    background-image: url(../img/fondo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.giftcard-imagen .monto,
+.giftcard-imagen .destinatario,
+.giftcard-imagen img {
+    position: absolute;
+}
+
+.giftcard-imagen .monto {
+    top: 0;
+    left: 0;
+    background-color: var(--negro);
+    color: var(--gris);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7em;
+    border-radius: 0 0 0.3rem 0;
+    border-bottom: 1px solid var(--gris);
+    border-right: 1px solid var(--gris);
+}
+
+.giftcard .destinatario {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--blanco);
+}
+
+.giftcard .destinatario .para {
+    font-family: var(--fuente-uno);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.giftcard .destinatario .nombre {
+    font-family: var(--fuente-dos);
+    font-size: 1.5rem;
+}
+
+.giftcard-imagen img {
+    height: 2em;
+    bottom: 1.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 41em) {
+    .giftcard {
+        padding: 2em 1em;
+    }
+
+    .giftcard-imagen {
+        width: 19em;
+        height: 19em;
+    }
+
+}

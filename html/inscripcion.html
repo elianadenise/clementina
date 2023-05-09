@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon ventana-->
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon" />
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Magra:wght@700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <!--css-->
+    <link rel="stylesheet" href="../css/inscripcion.css" />
+    <title>Inscripción | Academia Clementina</title>
+</head>
+
+<body>
+    <!-- H E A D E R -->
+    <header>
+        <!-- header uno -->
+        <div class="header-uno">
+            <!-- logo -->
+            <a href="../index.html"><img src="../img/logo-academia-w.svg" alt="Logo Academia Clementina" /></a>
+
+            <!-- busqueda -->
+            <form action="#" method="get">
+                <datalist id="informacion">
+                    <option value="HTML & CSS"></option>
+                    <option value="Javascript"></option>
+                    <option value="Java"></option>
+                    <option value="Selenium"></option>
+                    <option value="Python"></option>
+                    <option value="Diseño UX/UI"></option>
+                </datalist>
+                <input type="text" name="curso" list="informacion" placeholder="Buscá un curso" />
+                <button class="lupa">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass fa-sm"></i>
+                </button>
+            </form>
+
+            <!-- carrito -->
+            <div class="carrito">
+                <i class="fa-solid fa-cart-shopping carrito"></i>
+                <p>0</p>
+            </div>
+
+            <!-- menú desplegable -->
+            <div class="menu-desplegable">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- header menu -->
+        <nav class="header-menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="giftcard.html">Gift card</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- M A I N -->
+    <main class="inscripcion fondo-cuadriculado">
+        <!-- inscripcion -->
+        <section>
+            <article class="borde">
+                <h1>Inscripción</h1>
+                <!-- formulario -->
+                <form action="#" method="get">
+                    <div class="form-estudiante">
+                        <div class="datos">
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" name="nombre" id="nombre" class="ingreso nombre"
+                                placeholder="Clementina Mercury" required />
+
+                        </div>
+                        <div class="datos">
+                            <label for="dni">DNI</label>
+                            <input type="number" name="dni" id="dni" class="ingreso dni" placeholder="xxxxxxxx"
+                                required />
+
+                        </div>
+                        <div class="datos">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" name="correo" id="correo" class="ingreso email"
+                                placeholder="ejemplo@ejemplo.com" required />
+                        </div>
+                        <button class="resta">-</button>
+                    </div>
+                    <div class="form-estudiante">
+                        <div class="datos">
+                            <label for="nombre2">Nombre y apellido</label>
+                            <input type="text" name="nombre2" id="nombre2" class="ingreso nombre"
+                                placeholder="Clementina Mercury" required />
+                        </div>
+                        <div class="datos">
+                            <label for="dni2">DNI</label>
+                            <input type="number" name="dni2" id="dni2" class="ingreso dni" placeholder="xxxxxxxx"
+                                required />
+                        </div>
+                        <div class="datos">
+                            <label for="correo2">Correo electrónico</label>
+                            <input type="email" name="correo2" id="correo2" class="ingreso email"
+                                placeholder="ejemplo@ejemplo.com" required />
+                        </div>
+                        <button class="resta">-</button>
+                    </div>
+                    <div class="form-estudiante">
+                        <div class="datos">
+                            <label for="nombr3e">Nombre y apellido</label>
+                            <input type="text" name="nombre3" id="nombre3" class="ingreso nombre"
+                                placeholder="Clementina Mercury" required />
+                        </div>
+                        <div class="datos">
+                            <label for="dni3">DNI</label>
+                            <input type="number" name="dni3" id="dni3" class="ingreso dni" placeholder="xxxxxxxx"
+                                required />
+                        </div>
+                        <div class="datos">
+                            <label for="correo3">Correo electrónico</label>
+                            <input type="email" name="correo3" id="correo3" class="ingreso email"
+                                placeholder="ejemplo@ejemplo.com" required />
+                        </div>
+                        <button class="resta">-</button>
+                    </div>
+
+                    <!-- agregar persona -->
+                    <div class="agregar-persona">
+                        <button class="suma">+</button>
+                        <p>Agregar persona</p>
+                    </div>
+                    <!-- total -->
+                    <div class="total">
+                        <p>Total: ARS$000000</p>
+                        <input type="submit" value="Realizar inscripción" class="btn borde" />
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <img src="../img/computer.svg" alt="">
+        </aside>
+    </main>
+
+    <!-- F O O T E R -->
+    <footer>
+        <div>
+            <h4>Co-founders</h4>
+            <ul>
+                <li><i class="fa-regular fa-heart fa-xs"></i>Solange De Bonis - DNI 39559490</li>
+                <li><i class="fa-regular fa-heart fa-xs"></i>Eliana Navarro - DNI 41334491</li>
+            </ul>
+        </div>
+        <div class="central">
+            <h4>Menú</h4>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html"><i class="fa-solid fa-angle-right fa-xs"></i>Inicio</a>
+                    </li>
+                    <li>
+                        <a href="cursos.html"><i class="fa-solid fa-angle-right fa-xs"></i>Cursos</a>
+                    </li>
+                    <li>
+                        <a href="calendario.html"><i class="fa-solid fa-angle-right fa-xs"></i>Calendario</a>
+                    </li>
+                    <li>
+                        <a href="giftcard.html"><i class="fa-solid fa-angle-right fa-xs"></i>Gift card</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html"><i class="fa-solid fa-angle-right fa-xs"></i>Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h4>Sigamos en contacto</h4>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i>@academiaclementina</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i>
+                        @academiaclementina</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i>@academiaclementina</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

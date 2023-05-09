@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon ventana-->
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon" />
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Magra:wght@700&family=Source+Code+Pro:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+    <!--css-->
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Academia Clementina</title>
+</head>
+
+<body>
+    <!-- H E A D E R -->
+    <header>
+        <!-- header uno -->
+        <div class="header-uno">
+            <!-- logo -->
+            <a href="index.html"><img src="img/logo-academia-w.svg" alt="Logo Academia Clementina" /></a>
+
+            <!-- busqueda -->
+            <form action="#" method="get">
+                <datalist id="informacion">
+                    <option value="HTML & CSS"></option>
+                    <option value="Javascript"></option>
+                    <option value="Java"></option>
+                    <option value="Selenium"></option>
+                    <option value="Python"></option>
+                    <option value="Diseño UX/UI"></option>
+                </datalist>
+                <input type="text" name="curso" list="informacion" placeholder="Buscá un curso" />
+                <button class="lupa">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass fa-sm"></i>
+                </button>
+            </form>
+
+            <!-- carrito -->
+            <div class="carrito">
+                <i class="fa-solid fa-cart-shopping carrito"></i>
+                <p>0</p>
+            </div>
+
+            <!-- menú desplegable -->
+            <div class="menu-desplegable">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- header menu -->
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/cursos.html">Cursos</a></li>
+                <li><a href="html/calendario.html">Calendario</a></li>
+                <li><a href="html/giftcard.html">Gift card</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- M A I N -->
+    <main>
+        <!-- hero slider -->
+        <section class="hero">
+            <h1>
+                <span>
+                    Iniciá tu carrera IT con profesionales expertas en el área
+                </span>
+            </h1>
+
+            <article>
+                <img src="img/pregunta.svg" alt="Pregunta" />
+                <p>
+                    ¿Sabías qué... Clementina fue la primera computadora con fines
+                    científicos en Argentina?
+                </p>
+            </article>
+        </section>
+
+        <!-- pasos a seguir -->
+        <section class="pasos fondo-cuadriculado">
+            <article class="borde">
+                <h2>#1</h2>
+                <p>
+                    <span class="encabezado">Elegí un curso</span><br>
+                    Buscá en nuestra página el apartado de <a href="html/cursos.html">Cursos</a> y encontrá el que más
+                    se adecúe a tus necesidades. <br>
+                    En nuestro <a href="html/calendario.html">Calendario</a> encontrarás cursos para todos los niveles y
+                    necesidades.
+                </p>
+            </article>
+            <article class="borde">
+                <h2>#2</h2>
+                <p>
+                    <span class="encabezado">Inscribite</span><br>
+                    Una vez que hayas seleccionado el curso adecuado para vos,
+                    es momento de inscribirte.
+                    Hacé click en el botón "Comprar" y completá el formulario de registro.
+                    ¡No esperes más y asegurá tu lugar en nuestros cursos!
+                </p>
+            </article>
+            <article class="borde">
+                <h2>#3</h2>
+                <p>
+                    <span class="encabezado">Aprendé</span><br>
+                    Con nuestro equipo de profesionales y nuestra metodología de
+                    enseñanza innovadora, podrás adquirir las habilidades y conocimientos que necesitás para destacarte
+                    en el mundo IT. ¡Empezá a aprender ahora!
+                </p>
+            </article>
+        </section>
+
+        <!-- cursos destacados -->
+        <section class="cursos-destacados">
+            <h2 class="titulo-curso">Cursos destacados</h2>
+            <article class="card curso1">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="curso.html"><img src="img/curso-htmlcss.png" alt="HTML & CSS" class="img-card" /></a>
+                        <p class="precio"><span>ARS$9.000</span></p>
+                    </div>
+                    <div>
+                        <h3>HTML & CSS</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <article class="card curso2">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="html/curso.html"><img src="img/curso-javascript.png" alt="Javascript"
+                                class="img-card" /></a>
+                        <p class="precio"><span>ARS$15.000</span></p>
+                    </div>
+                    <div>
+                        <h3>Javascript</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <article class="card curso3">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="html/curso.html"><img src="img/curso-java.png" alt="Java" class="img-card" /></a>
+                        <p class="precio"><span>ARS$15.000</span></p>
+                    </div>
+                    <div>
+                        <h3>Java</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <article class="card curso4">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="html/curso.html"><img src="img/curso-python.png" alt="Python" class="img-card" /></a>
+                        <p class="precio"><span>ARS$15.000</span></p>
+                    </div>
+                    <div>
+                        <h3>Python</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <article class="card curso5">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="html/curso.html"><img src="img/curso-selenium.png" alt="Selenium" class="img-card" /></a>
+                        <p class="precio"><span>ARS$15.000</span></p>
+                    </div>
+                    <div>
+                        <h3>Selenium</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <article class="card curso6">
+                <div class="top borde">
+                    <div class="card-encabezado">
+                        <a href="html/curso.html"><img src="img/curso-uxui.png" alt="Diseño UX/UI" class="img-card" /></a>
+                        <p class="precio"><span>ARS$15.000</span></p>
+                    </div>
+                    <div>
+                        <h3>Diseño UX/UI</h3>
+                        <p>
+                            <i class="fa-sharp fa-regular fa-clock fa-sm"></i>&nbsp;&nbsp;16 clases de 2hs.
+                        </p>
+                    </div>
+                    <div class="card-botones">
+                        <a href="html/curso.html" class="a-card">Ver curso <i
+                                class="fa-solid fa-arrow-right fa-sm i-card"></i></a>
+                        <button class="btn borde">
+                            <a href="html/inscripcion.html">Comprar</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom borde"></div>
+            </article>
+
+            <button class="btn borde boton"><a href="html/cursos.html">Ver todos los cursos</a></button>
+        </section>
+
+        <!-- medios de pago -->
+        <aside class="medios-de-pago">
+            <h3 class="titulo">Medios de pago</h3>
+            <div>
+                <img src="img/mp-visa.png" alt="Visa" />
+                <img src="img/mp-paypal.png" alt="Paypal" />
+                <img src="img/mp-mercadopago.png" alt="Mercado pago" />
+                <img src="img/mp-mastercard.png" alt="Mastercard" />
+            </div>
+        </aside>
+    </main>
+
+    <!-- F O O T E R -->
+    <footer>
+        <div>
+            <h4>Co-founders</h4>
+            <ul>
+                <li><i class="fa-regular fa-heart fa-xs"></i>Solange De Bonis - DNI 39559490</li>
+                <li><i class="fa-regular fa-heart fa-xs"></i>Eliana Navarro - DNI 41334491</li>
+            </ul>
+        </div>
+        <div class="central">
+            <h4>Menú</h4>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-angle-right fa-xs"></i>Inicio</a>
+                    </li>
+                    <li>
+                        <a href="html/cursos.html"><i class="fa-solid fa-angle-right fa-xs"></i>Cursos</a>
+                    </li>
+                    <li>
+                        <a href="html/calendario.html"><i class="fa-solid fa-angle-right fa-xs"></i>Calendario</a>
+                    </li>
+                    <li>
+                        <a href="html/giftcard.html"><i class="fa-solid fa-angle-right fa-xs"></i>Gift card</a>
+                    </li>
+                    <li>
+                        <a href="html/contacto.html"><i class="fa-solid fa-angle-right fa-xs"></i>Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h4>Sigamos en contacto</h4>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i>@academiaclementina</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i>
+                        @academiaclementina</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank"><i
+                            class=" fa-brands fa-linkedin-in"></i>@academiaclementina</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
